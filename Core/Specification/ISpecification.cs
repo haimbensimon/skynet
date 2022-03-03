@@ -11,5 +11,15 @@ namespace Core.Specification
         Expression<Func<T ,bool>> Critiria {get;}
 
         List<Expression<Func<T, object>>> Includes {get;}
+
+        Expression<Func<T,object>> OredrBy {get;}
+        Expression<Func<T,object>> OredrByDescending {get;}
+        int Take {get;}
+        int Skip {get;}
+        bool IsPagingEnabled{get;}
+        
+
+        
+
     }
 }
