@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <h4>Internal Server Error - refhreshing the page make exception disappear</h4>
+  <ng-container *ngIf="error">
+    <h5 class="text-danger">Error : {{error.message}}</h5>
+    <p class="font-weight-bold">Note :if you see this than Angular probably not responsiable</p>
+    <p>What to do next ?</p>
+    <ol>
+      <li>Open chrome dev tools</li>
+      <li>insepct the network tab</li>
+      <li>Check the failing request</li>
+    </ol>
+    <p>Stack Trace:</p>
+    <p>{{error.details}}</p>
+  </ng-container>
+
+
+</div>
